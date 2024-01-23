@@ -4,23 +4,22 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-}
-
-h1, h2, p {
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
-    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #61dafb; /* Rick and Morty Blue */
+    color: #61dafb;
 }
 
 button {
@@ -31,10 +30,26 @@ button {
     border: none;
     cursor: pointer;
     margin: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #2185d0; /* Darker blue on hover */
+    background-color: #2185d0;
+}
+
+#informacionPersonaje {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#characterId {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+div {
+    margin: 10px 0;
 }
 
 #characterInfo {
@@ -44,7 +59,7 @@ button:hover {
 }
 
 #characterInfo div {
-    background-color: #282c34; /* Dark background */
+    background-color: #282c34;
     color: #ffffff;
     border-radius: 8px;
     padding: 15px;

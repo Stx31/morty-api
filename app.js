@@ -7,6 +7,7 @@ function obtenerInformacionPersonaje() {
             informacionPersonajeDiv.innerHTML = `
                 <h2>${data.name}</h2>
                 <p>Género: ${data.gender}</p>
+                <p>Ubicación: ${data.location.name}</p>
                 <img src="${data.image}" alt="Foto de ${data.name}">
             `;
         })
@@ -27,6 +28,7 @@ function filtrarPersonajes(genero) {
                     <div>
                         <h2>${personaje.name}</h2>
                         <p>Género: ${personaje.gender}</p>
+                        <p>Ubicación: ${personaje.location.name}</p>
                         <img src="${personaje.image}" alt="Foto de ${personaje.name}">
                     </div>
                 `).join('');
@@ -52,6 +54,7 @@ function mostrarTodosLosPersonajes() {
                     <div>
                         <h2>${personaje.name}</h2>
                         <p>Género: ${personaje.gender}</p>
+                        <p>Ubicación: ${personaje.location.name}</p>
                         <img src="${personaje.image}" alt="Foto de ${personaje.name}">
                     </div>
                 `).join('');
