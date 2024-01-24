@@ -8,6 +8,8 @@ function obtenerInformacionPersonaje() {
                 <h2>${data.name}</h2>
                 <p>Género: ${data.gender}</p>
                 <p>Ubicación: ${data.location.name}</p>
+                <p>Estado: ${data.status}</p>
+                <p>Origen: ${data.origin.name}</p>
                 <img src="${data.image}" alt="Foto de ${data.name}">
             `;
         })
@@ -29,6 +31,8 @@ function filtrarPersonajes(genero) {
                         <h2>${personaje.name}</h2>
                         <p>Género: ${personaje.gender}</p>
                         <p>Ubicación: ${personaje.location.name}</p>
+                        <p>Estado: ${personaje.status}</p>
+                        <p>Origen: ${personaje.origin.name}</p>
                         <img src="${personaje.image}" alt="Foto de ${personaje.name}">
                     </div>
                 `).join('');
@@ -55,6 +59,8 @@ function mostrarTodosLosPersonajes() {
                         <h2>${personaje.name}</h2>
                         <p>Género: ${personaje.gender}</p>
                         <p>Ubicación: ${personaje.location.name}</p>
+                        <p>Estado: ${personaje.status}</p>
+                        <p>Origen: ${personaje.origin.name}</p>
                         <img src="${personaje.image}" alt="Foto de ${personaje.name}">
                     </div>
                 `).join('');
