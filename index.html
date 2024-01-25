@@ -16,15 +16,22 @@
         <div>
             <label for="characterId">Ingresa el ID del personaje:</label>
             <input type="number" id="characterId" min="1" placeholder="Ingresa el ID del personaje">
-            <button onclick="obtenerInformacionPersonaje()">Obtener Info</button>
+            <button onclick="obtenerInformacionPersonajePorId()">Obtener Info</button>
+        </div>
+
+        <div>
+            <h2>filtrar por especie</h2>
+            <button onclick="filtrarPersonajesPorEspecie('human')">humano</button>
+            <button onclick="filtrarPersonajesPorEspecie('Alien')">Alien</button>
+            <button onclick="mostrarTodosLosPersonajes()">Mostrar Todos</button>
         </div>
 
         <div>
             <h2>Filtrar por Género:</h2>
-            <button onclick="filtrarPersonajes('Male')">Masculino</button>
-            <button onclick="filtrarPersonajes('Female')">Femenino</button>
-            <button onclick="filtrarPersonajes('Genderless')">Sin género</button>
-            <button onclick="filtrarPersonajes('unknown')">Desconocido</button>
+            <button onclick="filtrarPersonajesPorGenero('Male')">Masculino</button>
+            <button onclick="filtrarPersonajesPorGenero('Female')">Femenino</button>
+            <button onclick="filtrarPersonajesPorGenero('Genderless')">Sin género</button>
+            <button onclick="filtrarPersonajesPorGenero('unknown')">Desconocido</button>
             <button onclick="mostrarTodosLosPersonajes()">Mostrar Todos</button>
         </div>
 
